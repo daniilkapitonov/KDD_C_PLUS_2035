@@ -7,7 +7,7 @@ void hello(){
     cout << "Hello" << endl;
 }
 
-int sum(int n1=2, int n2=4){
+int sum(int n1=2, int n2=4, char c='2'){
     int sum;
     sum = n1+n2;
     return sum;
