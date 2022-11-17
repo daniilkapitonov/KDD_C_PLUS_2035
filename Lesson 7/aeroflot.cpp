@@ -4,9 +4,9 @@
 using namespace std;
 
 struct aeroflot{
-    char *dest;
+    string dest;
     int num;
-    char type[1];
+    string type;
 };
 
 aeroflot input(){
@@ -22,20 +22,20 @@ void print_plane(aeroflot plane){
 }
 int main(int argc, char const *argv[])
 {
-    int n=2;
+    int n=1;
     aeroflot mass[n];
-    for (int i=0; i<1;i++){
+    for (int i=0; i<n;i++){
         mass[i] = input();
         // print_plane(mass[i]);
     }
-    char t;
-    // cout << "Введите тип - ";
+    string t;
+    cout << "Введите тип - ";
     cin >> t;
-    for (int x=0;x<n;x++){
-        cout << x;
-        // if (strcmp(t,mass[i].type)==0){
-        //     print_plane(mass[i]);
-        // }
+    for (int i=0;i<n;i++){
+        cout << i;
+        if (t==mass[i].type){
+             print_plane(mass[i]);
+        }
     }
 
 }
