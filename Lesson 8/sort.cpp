@@ -23,7 +23,6 @@ int main(int argc, char const *argv[])
     long int count;
     int *mass = rand_mass(n);
     cout_m(mass, n);
-
     for(int i=0;i<n;i++){
         for (int j=0;j<n;j++){
             if (mass[i]>mass[j]){
@@ -37,6 +36,6 @@ int main(int argc, char const *argv[])
     cout << endl;
     cout_m(mass, n);
     cout << endl << count;
-
+    
     
 }
